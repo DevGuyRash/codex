@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "job-apply-agent"
+version = "0.1.0"
+description = "Autonomous agent for applying to jobs on various job boards."
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.13"
+openai-agents = "^0.9"
+browser-use = "^0.8"
+playwright = "^1.44"
+pyautogui = "^0.9"
+typer = "*"
+rich = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+black = {extras = ["d"], version = "*"}
+pylint = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
